@@ -1,5 +1,5 @@
 
-/* Fonts */
+/* FONTS */
 
 /*
 font-family: 'Rock Salt', cursive;
@@ -8,7 +8,7 @@ font-family: 'Sansita', sans-serif;
 */
 
 
-/* General and Landing Page */
+/* GENERAL STYLES AND LANDING PAGE */
 
 body {
 	background: #131313; /*used to be black*/
@@ -169,7 +169,7 @@ body {
 
 
 
-/* Genre Pages */
+/* GENRE PAGES */
 
 .heading {
 	position: relative;
@@ -260,7 +260,7 @@ body {
 
 
 
-/* About Me Page */
+/* ABOUT ME PAGE */
 
 #about .text {
 	display: none;
@@ -277,8 +277,10 @@ body {
 
 
 
-/* Animations */
+/* ANIMATIONS */
 
+/* Older Version button animation */
+/*
 .animated {
 	transition: width 1.5s, height 1.5s, background 1.5s;
 }
@@ -286,9 +288,28 @@ body {
 .animated:hover {
 	width: 150px;
 	height: 75px;
-	background: #65e0a1; /*green*/
+	background: #65e0a1;
+}
+*/
+
+/* Current Version button animation */
+.animated {
+	transition: background 0.5s;
 }
 
+.animated a {
+	transition: color 0.5s;
+}
+
+.animated:hover {
+	background: #ff1241;
+}
+
+.animated a:hover {
+	color: white;
+}
+
+/* Bouncing Ball Animation styles */
 #message-1 {
 	position: relative;
 	width: 85%;
